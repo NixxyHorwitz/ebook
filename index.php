@@ -3,10 +3,10 @@ declare(strict_types=1);
 require_once __DIR__ . '/bootstrap.php';
 use App\Config;
 
-$headerTitle = Config::get('product_name', 'Tutorial Cuan 100rb-600rb/Hari');
+$headerTitle = Config::get('product_name', 'Panduan Bisnis Digital');
 $siteTitle   = Config::get('site_title', $headerTitle);
-$siteTagline = Config::get('site_tagline', 'Panduan Lengkap Penghasil Uang Online');
-$footerText  = Config::get('footer_text', 'Garansi jika tidak profit di hari pertama.');
+$siteTagline = Config::get('site_tagline', 'Langkah Praktis Memulai Karir di Era Digital');
+$footerText  = Config::get('footer_text', 'Garansi kepuasan 100%.');
 $favicon     = Config::get('favicon_file', '');
 
 use App\Logger;
@@ -55,20 +55,20 @@ $priceStr = 'Rp ' . number_format($price, 0, ',', '.');
 <body>
 
 <!-- ANNOUNCEMENT BAR -->
-<div class="announce-bar">🔥 TERBATAS! Tutorial Cuan Rp100rb–600rb/Hari — <a href="#pricing">Dapatkan Sekarang →</a></div>
+<div class="announce-bar">🚀 PENDAFTARAN DIBUKA! Panduan Bisnis & Karir Digital — <a href="#pricing">Dapatkan Sekarang →</a></div>
 
 <!-- HEADER -->
 <header class="header">
   <a href="/" class="header__logo">
     <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
       <circle cx="16" cy="16" r="14" fill="#f59e0b"/>
-      <text x="16" y="21" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">💰</text>
+      <text x="16" y="21" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">🚀</text>
     </svg>
-    Tutorial Cuan
+    Kelas Digital
   </a>
   <nav class="header__nav">
-    <a href="#features" class="btn btn--ghost btn--sm">Isi Paket</a>
-    <a href="#pricing" class="btn btn--primary btn--sm" id="header-buy-btn">Beli Sekarang</a>
+    <a href="#features" class="btn btn--ghost btn--sm">Isi Modul</a>
+    <a href="#pricing" class="btn btn--primary btn--sm" id="header-buy-btn">Daftar Sekarang</a>
   </nav>
 </header>
 
@@ -76,27 +76,27 @@ $priceStr = 'Rp ' . number_format($price, 0, ',', '.');
 <section class="hero">
   <div class="hero__eyebrow fade-up">
     <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
-    Terbukti · Bergaransi · Langsung Praktek
+    Terstruktur · Praktis · Untuk Pemula
   </div>
   <h1 class="hero__title fade-up fade-up--1" style="font-weight:700">
-    Cara Dapat <span>Rp100rb–600rb</span><br>Setiap Hari Dari HP!
+    Langkah Praktis Memulai<br><span>Karir & Bisnis Digital</span>
   </h1>
   <p class="hero__subtitle fade-up fade-up--2">
-    Apk Penghasil Cuan · Web Penghasil Cuan · Video Tutorial VIP · PDF Panduan Lengkap — semua dalam satu paket.
+    Platform Freelance · Tools Produktivitas · Video Eksklusif · PDF Panduan Lengkap — semua dalam satu paket edukasi.
   </p>
   <div class="fade-up fade-up--3" style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
-    <a href="#pricing" class="btn btn--primary btn--lg" id="hero-cta">Mulai Sekarang — <?= $priceStr ?></a>
-    <a href="#features" class="btn btn--ghost btn--lg">Lihat Semua Fitur</a>
+    <a href="#pricing" class="btn btn--primary btn--lg" id="hero-cta">Mulai Belajar — <?= $priceStr ?></a>
+    <a href="#features" class="btn btn--ghost btn--lg">Lihat Kurikulum</a>
   </div>
   <div class="fade-up fade-up--4" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-top:24px">
     <div style="display:flex;gap:2px"><span style="color:#fbbc04;font-size:16px">★</span><span style="color:#fbbc04;font-size:16px">★</span><span style="color:#fbbc04;font-size:16px">★</span><span style="color:#fbbc04;font-size:16px">★</span><span style="color:#fbbc04;font-size:16px">★</span></div>
-    <span style="font-size:13px;color:var(--c-text-sec);font-weight:500">4.9/5 dari <strong style="color:var(--c-text-primary)">1.200+</strong> pengguna aktif</span>
+    <span style="font-size:13px;color:var(--c-text-sec);font-weight:500">4.9/5 dari <strong style="color:var(--c-text-primary)">1.200+</strong> siswa aktif</span>
   </div>
   <!-- Guarantee badge -->
   <div class="fade-up fade-up--4" style="margin-top:20px;display:flex;justify-content:center;padding:0 16px;">
     <div style="display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:10px;background:#fef9c3;border:1px solid #fde047;border-radius:12px;padding:12px 20px;font-size:13px;color:#a16207;font-weight:500;text-align:center;">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0;"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
-      <div><strong style="margin:0 3px">GARANSI</strong> — Tidak profit hari pertama? Uang kembali 100%!</div>
+      <div><strong style="margin:0 3px">GARANSI KEPUASAN</strong> — Materi tidak sesuai? Uang kembali 100%!</div>
     </div>
   </div>
 </section>
@@ -113,26 +113,26 @@ $priceStr = 'Rp ' . number_format($price, 0, ',', '.');
   </div>
   <div class="trust-item">
     <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-    Dukungan 24/7 via WhatsApp
+    Dukungan Komunitas
   </div>
   <div class="trust-item">
     <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-    Garansi Profit Hari Pertama
+    Materi Berkualitas
   </div>
 </div>
 
 <!-- STATS BAR -->
 <div class="stats-bar">
   <div class="stats-bar__inner">
-    <div class="stat-item"><div class="stat-item__num"><span>5.000</span>+</div><div class="stat-item__label">Member Aktif</div></div>
-    <div class="stat-item"><div class="stat-item__num"><span>Rp600</span>rb</div><div class="stat-item__label">Penghasilan Maks/Hari</div></div>
+    <div class="stat-item"><div class="stat-item__num"><span>5.000</span>+</div><div class="stat-item__label">Siswa Aktif</div></div>
+    <div class="stat-item"><div class="stat-item__num"><span>50</span>+</div><div class="stat-item__label">Modul Video</div></div>
     <div class="stat-item"><div class="stat-item__num"><span>4.9</span>/5</div><div class="stat-item__label">Rating Kepuasan</div></div>
-    <div class="stat-item"><div class="stat-item__num"><span>100</span>%</div><div class="stat-item__label">Garansi Profit H1</div></div>
+    <div class="stat-item"><div class="stat-item__num"><span>100</span>%</div><div class="stat-item__label">Garansi Belajar</div></div>
   </div>
 </div>
 <section class="features-section" id="features">
   <h2>Apa yang Ada di Dalam Paket</h2>
-  <p class="subtitle">Satu paket lengkap, langsung bisa praktek dan menghasilkan uang</p>
+  <p class="subtitle">Satu paket edukasi lengkap, langsung bisa dipelajari dan dipraktekkan</p>
   <div class="features-grid">
     <?php
     // Filled Material Design SVG icons — Google product style
@@ -184,14 +184,14 @@ $priceStr = 'Rp ' . number_format($price, 0, ',', '.');
     $svgMoney  = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg>';
 
     $features = [
-      [$svgApk,    'Apk Penghasil Cuan',   'Kumpulan aplikasi terpilih & terbukti menghasilkan uang. Install dan langsung mulai earning.','#fef9c3','#ca8a04'],
-      [$svgWeb,    'Web Penghasil Cuan',   'Website & platform online terbaik untuk menghasilkan uang dari rumah setiap hari.','#e6f4ea','#34a853'],
-      [$svgVideo2, 'Video Tutorial VIP',   'Video step-by-step eksklusif yang menjelaskan cara kerja setiap metode secara detail.','#fce8e6','#ea4335'],
-      [$svgPdf,    'PDF Panduan Lengkap',  'Ebook panduan komprehensif 100+ halaman. Bisa dibaca kapan saja & di mana saja.','#e8f0fe','#1a73e8'],
-      [$svgBonus,  'Bonus Materi Eksklusif','Materi tambahan dan update terbaru. Metode-metode baru yang terus diupdate.','#fff8e1','#f29900'],
-      [$svgSupport,'Grup Support VIP',     'Akses grup WhatsApp member aktif. Tanya jawab, sharing tips, dan motivasi harian.','#f3e8ff','#9333ea'],
-      [$svgUpdate, 'Update Seumur Hidup',  'Materi diupdate setiap bulan mengikuti tren terbaru. Sekali beli, dapat update selamanya.','#e6f4ea','#34a853'],
-      [$svgMoney,  'Garansi Profit H1',    'Jika tidak profit di hari pertama mengikuti panduan, kami kembalikan uang Anda 100%.','#fef9c3','#ca8a04'],
+      [$svgApk,    'Tools Produktivitas',  'Kumpulan aplikasi terpilih untuk menunjang efisiensi kerja digital Anda.','#fef9c3','#ca8a04'],
+      [$svgWeb,    'Platform Freelance',   'Daftar platform online terpercaya untuk memulai karir freelance dari rumah.','#e6f4ea','#34a853'],
+      [$svgVideo2, 'Video Tutorial Edukasi', 'Video step-by-step eksklusif yang membahas strategi digital secara detail.','#fce8e6','#ea4335'],
+      [$svgPdf,    'PDF Panduan Lengkap',  'Modul panduan komprehensif 100+ halaman. Bisa dibaca kapan saja & di mana saja.','#e8f0fe','#1a73e8'],
+      [$svgBonus,  'Bonus Template Khusus','Template dokumen dan materi tambahan yang terus diupdate secara berkala.','#fff8e1','#f29900'],
+      [$svgSupport,'Grup Diskusi VIP',     'Akses grup komunitas member. Tempat diskusi, networking, dan berbagi wawasan.','#f3e8ff','#9333ea'],
+      [$svgUpdate, 'Update Seumur Hidup',  'Akses materi yang diupdate mengikuti perkembangan industri digital terbaru.','#e6f4ea','#34a853'],
+      [$svgMoney,  'Garansi Kepuasan',     'Jika materi tidak memberikan wawasan baru bagi Anda, kami berikan jaminan refund.','#fef9c3','#ca8a04'],
     ];
     foreach ($features as [$icon, $title, $desc, $bg, $color]):
     ?>
@@ -210,27 +210,27 @@ $priceStr = 'Rp ' . number_format($price, 0, ',', '.');
 <div class="security-section">
   <div class="security-section__inner">
     <div class="sec-badge"><div class="sec-badge__icon">🔒</div><div class="sec-badge__text"><div class="sec-badge__title">Pembayaran Aman</div><div class="sec-badge__sub">Diproses via QRIS resmi BI</div></div></div>
-    <div class="sec-badge"><div class="sec-badge__icon">✅</div><div class="sec-badge__text"><div class="sec-badge__title">Materi 100% Original</div><div class="sec-badge__sub">Panduan nyata & terbukti profit</div></div></div>
-    <div class="sec-badge"><div class="sec-badge__icon">💬</div><div class="sec-badge__text"><div class="sec-badge__title">Support 24/7</div><div class="sec-badge__sub">Resp. cepat via WhatsApp</div></div></div>
-    <div class="sec-badge"><div class="sec-badge__icon">🛡️</div><div class="sec-badge__text"><div class="sec-badge__title">Garansi Profit H1</div><div class="sec-badge__sub">Tidak profit? Refund penuh</div></div></div>
+    <div class="sec-badge"><div class="sec-badge__icon">✅</div><div class="sec-badge__text"><div class="sec-badge__title">Materi 100% Original</div><div class="sec-badge__sub">Disusun oleh praktisi ahli</div></div></div>
+    <div class="sec-badge"><div class="sec-badge__icon">💬</div><div class="sec-badge__text"><div class="sec-badge__title">Komunitas Aktif</div><div class="sec-badge__sub">Ruang diskusi responsif</div></div></div>
+    <div class="sec-badge"><div class="sec-badge__icon">🛡️</div><div class="sec-badge__text"><div class="sec-badge__title">Garansi Kepuasan</div><div class="sec-badge__sub">Tidak puas? Refund penuh</div></div></div>
   </div>
 </div>
 
 <!-- PRICING -->
 <section class="pricing-section" id="pricing">
   <div class="pricing-card fade-up">
-    <div class="pricing-card__badge">Terlaris</div>
+    <div class="pricing-card__badge">Terpopuler</div>
     <div class="pricing-card__header">
-      <div style="margin-bottom:8px"><span class="urgency-badge">🔥 Stok terbatas — segera dapatkan aksesnya!</span></div>
-      <div class="pricing-card__name">Tutorial Cuan Harian</div>
-      <div class="pricing-card__tagline">Panduan lengkap menghasilkan Rp100rb–600rb setiap hari dari HP</div>
+      <div style="margin-bottom:8px"><span class="urgency-badge">🎓 Tingkatkan skill digital Anda hari ini!</span></div>
+      <div class="pricing-card__name">Bundel Ecourse Digital</div>
+      <div class="pricing-card__tagline">Panduan terstruktur membangun karir freelance dan bisnis online</div>
       <div class="pricing-card__price">
         <div class="pricing-card__amount"><?= $priceStr ?></div>
         <div class="pricing-card__period">/12 bulan</div>
       </div>
       <div class="pricing-card__promo">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M21.41 11.58l-9-9C12.05 2.22 11.55 2 11 2H4c-1.1 0-2 .9-2 2v7c0 .55.22 1.05.59 1.42l9 9c.36.36.86.58 1.41.58.55 0 1.05-.22 1.41-.59l7-7c.37-.36.59-.86.59-1.41s-.23-1.06-.59-1.42zM5.5 7C4.67 7 4 6.33 4 5.5S4.67 4 5.5 4 7 4.67 7 5.5 6.33 7 5.5 7z"/></svg>
-        Paket 12 bulan — hemat vs beli sendiri
+        Paket 12 bulan — hemat vs langganan bulanan
       </div>
     </div>
     <div class="pricing-card__body">
@@ -240,14 +240,14 @@ $priceStr = 'Rp ' . number_format($price, 0, ',', '.');
         </a>
       </div>
       <ul class="feature-list">
-        <li><strong>Apk Penghasil Cuan</strong> — Kumpulan aplikasi terbukti menghasilkan uang</li>
-        <li><strong>Web Penghasil Cuan</strong> — Platform online terbaik untuk cari uang dari HP</li>
-        <li><strong>Video Tutorial VIP</strong> — Panduan step-by-step eksklusif</li>
-        <li><strong>PDF Panduan Lengkap</strong> — Ebook 100+ halaman siap dipraktekkan</li>
-        <li><strong>Bonus Materi Eksklusif</strong> — Update terbaru setiap bulan</li>
-        <li><strong>Grup Support VIP</strong> — Komunitas WhatsApp member aktif</li>
-        <li><strong>Update Seumur Hidup</strong> — Sekali beli, update terus selamanya</li>
-        <li><strong>🛡️ Garansi Profit Hari Pertama</strong> — Tidak profit? Uang kembali 100%</li>
+        <li><strong>Tools Produktivitas</strong> — Kumpulan aplikasi penunjang kerja digital</li>
+        <li><strong>Platform Freelance</strong> — Rekomendasi platform terpercaya</li>
+        <li><strong>Video Tutorial Edukasi</strong> — Panduan visual step-by-step</li>
+        <li><strong>PDF Panduan Lengkap</strong> — Modul 100+ halaman siap pelajari</li>
+        <li><strong>Bonus Template Khusus</strong> — Aset digital tambahan untuk Anda</li>
+        <li><strong>Grup Diskusi VIP</strong> — Komunitas networking member aktif</li>
+        <li><strong>Update Seumur Hidup</strong> — Akses materi baru tanpa biaya tambahan</li>
+        <li><strong>🛡️ Garansi Kepuasan</strong> — Tidak puas dengan materinya? Uang kembali 100%</li>
       </ul>
     </div>
   </div>
@@ -255,15 +255,15 @@ $priceStr = 'Rp ' . number_format($price, 0, ',', '.');
 
 <!-- HOW IT WORKS -->
 <section class="how-section">
-  <h2>Cara Kerja</h2>
-  <p class="subtitle">Proses mudah, aktivasi cepat dalam hitungan menit</p>
+  <h2>Cara Pendaftaran</h2>
+  <p class="subtitle">Proses mudah, akses materi terbuka dalam hitungan menit</p>
   <div class="steps-grid">
     <?php
     $steps = [
-      ['1','Beli Paket','Lakukan pembayaran via QRIS — aman dan instan'],
-      ['2','Akses Materi','Semua materi langsung dikirim ke email Anda'],
-      ['3','Ikuti Tutorial','Tonton video & baca PDF panduan step-by-step'],
-      ['4','Mulai Earning!','Praktek dan rasakan hasilnya hari pertama!'],
+      ['1','Pilih Paket','Selesaikan pembayaran via QRIS — sistem terenkripsi aman'],
+      ['2','Akses Platform','Link akses dashboard akan dikirim instan ke email Anda'],
+      ['3','Mulai Belajar','Pelajari video & baca PDF panduan sesuai kurikulum'],
+      ['4','Terapkan Skill','Praktekkan wawasan baru Anda di dunia profesional'],
     ];
     foreach ($steps as [$n, $t, $d]):
     ?>
@@ -280,21 +280,21 @@ $priceStr = 'Rp ' . number_format($price, 0, ',', '.');
 <section style="background:var(--c-bg-alt);border-top:1px solid var(--c-border);border-bottom:1px solid var(--c-border);padding:72px 24px">
   <div style="max-width:1000px;margin:0 auto">
     <h2 style="text-align:center;margin-bottom:8px">Apa Kata Member Kami</h2>
-    <p style="text-align:center;color:var(--c-text-sec);font-size:16px;margin-bottom:48px">Lebih dari 5.000 member telah merasakan manfaatnya</p>
+    <p style="text-align:center;color:var(--c-text-sec);font-size:16px;margin-bottom:48px">Bergabunglah dengan komunitas pembelajar aktif kami</p>
     <div class="testi-grid">
       <div class="testi-card">
         <div class="testi-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-        <div class="testi-text">“Awalnya skeptis, tapi setelah coba ternyata beneran cuan! Hari pertama langsung dapat Rp150rb. Materinya lengkap banget dan gampang dipahami.”</div>
+        <div class="testi-text">“Materi sangat terstruktur dan mudah diikuti. Sebagai pemula, panduan ini sangat membantu saya memahami cara kerja platform freelance.”</div>
         <div class="testi-author"><div class="testi-avatar">A</div><div><div class="testi-name">Andi Saputra.</div><div class="testi-loc">Jakarta</div></div></div>
       </div>
       <div class="testi-card">
         <div class="testi-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-        <div class="testi-text">“Ga nyangka dari HP doang bisa dapat 300-500 ribu sehari. Tutorial videonya jelas banget, langsung bisa dipraktekin. Recommended!”</div>
+        <div class="testi-text">“Video tutorialnya jelas dan kualitas audionya bagus. Bonus template-nya juga sangat berguna untuk memulai project pertama saya.”</div>
         <div class="testi-author"><div class="testi-avatar" style="background:#e6f4ea;color:#34a853">S</div><div><div class="testi-name">Siti Rahayu.</div><div class="testi-loc">Surabaya</div></div></div>
       </div>
       <div class="testi-card">
         <div class="testi-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-        <div class="testi-text">“Udah 2 bulan pakai, rata-rata 400rb/hari. Grupnya aktif, ada yang sharing tips baru terus. Garansinya juga beneran ada, mantap!”</div>
+        <div class="testi-text">“Grup diskusinya sangat aktif dan suportif. Banyak insight baru yang saya dapat dari member lain. Sangat worth it!”</div>
         <div class="testi-author"><div class="testi-avatar" style="background:#fff8e1;color:#f29900">B</div><div><div class="testi-name">Budi Wicaksono.</div><div class="testi-loc">Bandung</div></div></div>
       </div>
     </div>
@@ -307,11 +307,11 @@ $priceStr = 'Rp ' . number_format($price, 0, ',', '.');
   <div id="faq-list"></div>
   <?php
   $faqs = [
-    ['Apakah materi ini benar-benar terbukti menghasilkan?', 'Ya! Semua metode sudah dipraktekkan oleh ribuan member kami. Rata-rata member mendapatkan Rp100rb–600rb per hari tergantung konsistensi dan metode yang dipilih.'],
-    ['Bagaimana cara mendapatkan materinya?', 'Setelah pembayaran dikonfirmasi, semua materi (APK, link web, video tutorial, dan PDF) langsung dikirim ke email Anda dalam hitungan menit.'],
-    ['Metode pembayaran apa yang diterima?', 'Saat ini hanya QRIS — bisa dibayar lewat GoPay, OVO, Dana, QRIS BCA, Shopeepay, dan semua dompet digital yang mendukung QRIS.'],
-    ['Bagaimana jika saya tidak profit di hari pertama?', 'Kami memberikan <strong>GARANSI penuh</strong>. Jika Anda mengikuti panduan dengan benar namun tidak mendapatkan profit di hari pertama, kami refund 100% tanpa syarat apapun.'],
-    ['Apakah perlu pengalaman atau skill khusus?', 'Tidak sama sekali! Tutorial dibuat dari nol, sangat mudah dipahami meski belum pernah cari uang online sebelumnya. Cukup punya HP dan ikuti langkah-langkahnya.'],
+    ['Apakah materi ini cocok untuk pemula?', 'Ya! Semua materi disusun dari tingkat dasar. Sangat mudah dipahami meski Anda belum memiliki pengalaman di bidang digital sebelumnya.'],
+    ['Bagaimana cara mengakses materinya?', 'Setelah pembayaran dikonfirmasi, link akses menuju dashboard pembelajaran dan grup diskusi langsung dikirim ke email Anda.'],
+    ['Metode pembayaran apa yang tersedia?', 'Saat ini kami menerima pembayaran via QRIS yang didukung oleh berbagai e-wallet (GoPay, OVO, Dana, ShopeePay) dan m-Banking.'],
+    ['Bagaimana cara kerja garansinya?', 'Kami memberikan <strong>Garansi Kepuasan</strong>. Jika Anda merasa materi tidak bermanfaat setelah mempelajarinya, silakan hubungi admin kami untuk proses refund 100%.'],
+    ['Apakah saya harus membayar lagi untuk update materi?', 'Tidak. Anda hanya perlu membayar satu kali (sekali bayar) dan akan mendapatkan update materi terbaru secara gratis seumur hidup.'],
   ];
   foreach ($faqs as [$q, $a]):
   ?>
@@ -327,8 +327,8 @@ $priceStr = 'Rp ' . number_format($price, 0, ',', '.');
 
 <!-- FOOTER -->
 <footer class="footer">
-  <p>Â© <?= date('Y') ?> Tutorial Cuan Harian. Hak cipta dilindungi.</p>
-  <p style="margin-top:6px"><a href="#">Syarat & Ketentuan</a> · <a href="#">Kebijakan Privasi</a> Â</p>
+  <p>© <?= date('Y') ?> Ecourse Bisnis Digital. Hak cipta dilindungi.</p>
+  <p style="margin-top:6px"><a href="#">Syarat & Ketentuan</a> · <a href="#">Kebijakan Privasi</a></p>
 </footer>
 
 <script>
