@@ -1,25 +1,24 @@
-# Google AI Pro — Security & Routing Rules
+# Tutorial Cuan — Security & Routing Rules
 
 # Disable directory listing
 Options -Indexes
 
 # Protect sensitive files
-<FilesMatch "(\.env|bootstrap\.php|schema\.sql|error_log\.txt|\.git)">
+<FilesMatch "(\.env|bootstrap\.php|schema\.sql|error_log\.txt|\.git|\.gitignore)">
     Order Allow,Deny
     Deny from all
 </FilesMatch>
 
-
-# Block access to src/ and bot/ directories directly
+# Block access to src/ and install/ directories directly
 <IfModule mod_rewrite.c>
     RewriteEngine On
-    RewriteBase /googlepro/
+    RewriteBase /
 
     # Block direct access to internal dirs
     RewriteRule ^(src|bot|install|uploads/qris_)/ - [F,L]
 
     # Block .php in src/ and bot/ from direct browser access
-    RewriteCond %{REQUEST_URI} ^/googlepro/(src|bot|install)/
+    RewriteCond %{REQUEST_URI} ^/(src|bot|install)/
     RewriteRule ^ - [F,L]
 </IfModule>
 
@@ -29,6 +28,8 @@ Options -Indexes
     Header always set X-Frame-Options "SAMEORIGIN"
     Header always set X-XSS-Protection "1; mode=block"
     Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+    Header always set Content-Security-Policy "default-src 'self' https: data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:;"
 </IfModule>
 
 # PHP settings
