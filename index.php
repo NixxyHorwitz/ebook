@@ -93,10 +93,10 @@ $priceStr = 'Rp ' . number_format($price, 0, ',', '.');
     <span style="font-size:13px;color:var(--c-text-sec);font-weight:500">4.9/5 dari <strong style="color:var(--c-text-primary)">1.200+</strong> pengguna aktif</span>
   </div>
   <!-- Guarantee badge -->
-  <div class="fade-up fade-up--4" style="margin-top:20px;display:flex;justify-content:center">
-    <div style="display:inline-flex;align-items:center;gap:10px;background:#fef9c3;border:1px solid #fde047;border-radius:12px;padding:10px 20px;font-size:13px;color:#a16207;font-weight:500">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
-      <strong style="margin:0 3px">GARANSI</strong> — Tidak profit hari pertama? Uang kembali 100%!
+  <div class="fade-up fade-up--4" style="margin-top:20px;display:flex;justify-content:center;padding:0 16px;">
+    <div style="display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:10px;background:#fef9c3;border:1px solid #fde047;border-radius:12px;padding:12px 20px;font-size:13px;color:#a16207;font-weight:500;text-align:center;">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0;"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+      <div><strong style="margin:0 3px">GARANSI</strong> — Tidak profit hari pertama? Uang kembali 100%!</div>
     </div>
   </div>
 </section>
