@@ -402,30 +402,113 @@ p  { margin-bottom: 8px; }
 }
 
 @media (max-width: 768px) {
-  .header { padding: 0 16px; }
+  :root { --header-h: 52px; }
+  .header { padding: 0 12px; }
+  .header__logo { font-size: 16px; }
+  .header__logo svg { width: 22px; height: 22px; }
   .header__nav .btn--ghost { display: none; }
-  .hero { padding: 48px 16px 40px; }
-  .hero__subtitle { font-size: 16px; }
-  .pricing-section { padding: 0 16px 48px; }
-  .pricing-card__header, .pricing-card__body { padding: 20px; }
-  .features-section { padding: 48px 16px; }
-  .features-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
-  .feature-card { padding: 16px; }
-  .feature-card__icon { width: 36px; height: 36px; margin-bottom: 12px; }
-  .feature-card__title { font-size: 13px; }
-  .feature-card__desc { font-size: 12px; }
-  .trust-bar { gap: 16px; padding: 20px 16px; }
-  .method-cards { grid-template-columns: 1fr 1fr; }
+  .header__nav .btn--sm { height: 30px; padding: 0 12px; font-size: 12px; }
+
+  .announce-bar { font-size: 11px; padding: 6px 12px; }
+
+  .hero { padding: 36px 14px 28px; }
+  .hero__eyebrow { font-size: 11px; padding: 3px 10px; margin-bottom: 14px; }
+  .hero__subtitle { font-size: 13px; margin-bottom: 18px; }
+
+  .pricing-section { padding: 0 14px 36px; }
+  .pricing-card { border-radius: 16px; }
+  .pricing-card__header { padding: 24px 18px 16px; }
+  .pricing-card__body { padding: 18px; }
+  .pricing-card__amount { font-size: 36px; }
+  .pricing-card__name { font-size: 16px; }
+  .pricing-card__tagline { font-size: 12px; margin-bottom: 12px; }
+  .pricing-card__cta { margin-bottom: 16px; }
+
+  .features-section { padding: 32px 14px; }
+  .features-section h2 { font-size: 18px; }
+  .features-section .subtitle { font-size: 13px; margin-bottom: 20px; }
+  .features-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .feature-card { padding: 12px; }
+  .feature-card__icon { width: 30px; height: 30px; margin-bottom: 8px; }
+  .feature-card__icon svg { width: 15px; height: 15px; }
+  .feature-card__title { font-size: 12px; margin-bottom: 3px; }
+  .feature-card__desc { font-size: 11px; }
+
+  .trust-bar { gap: 12px; padding: 16px 14px; }
+  .trust-item { font-size: 11px; gap: 5px; }
+  .trust-item svg { width: 13px; height: 13px; }
+
+  .stats-bar { padding: 20px 14px; }
+  .stat-item { padding: 0 14px; }
+  .stat-item__num { font-size: 22px; }
+  .stat-item__label { font-size: 10px; }
+
+  .testimonials-section { padding: 36px 14px; }
+  .testimonials-section h2 { font-size: 18px; }
+  .testimonials-section .subtitle { font-size: 13px; margin-bottom: 24px; }
+  .testi-grid { grid-template-columns: 1fr; gap: 12px; }
+  .testi-card { padding: 16px; }
+  .testi-text { font-size: 13px; margin-bottom: 12px; }
+  .testi-stars span { font-size: 13px; }
+
+  .how-section { padding: 36px 14px; }
+  .how-section h2 { font-size: 18px; }
+  .how-section .subtitle { font-size: 13px; margin-bottom: 24px; }
+  .steps-grid { grid-template-columns: 1fr 1fr; gap: 20px; }
+  .steps-grid::before { display: none; }
+  .step-circle { width: 40px; height: 40px; font-size: 16px; margin-bottom: 10px; }
+  .step-item__title { font-size: 13px; }
+  .step-item__desc { font-size: 11px; }
+
+  .security-section { padding: 28px 14px; }
+  .security-section__inner { gap: 16px; }
+  .sec-badge__icon { width: 36px; height: 36px; font-size: 18px; }
+  .sec-badge__title { font-size: 12px; }
+  .sec-badge__sub { font-size: 10px; }
+
+  .method-cards { grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 16px; }
+  .method-card { padding: 12px 8px; }
+  .method-card__icon { font-size: 22px; margin-bottom: 5px; }
+  .method-card__title { font-size: 12px; }
+  .method-card__sub { font-size: 10px; }
+
+  .footer { padding: 18px 14px; font-size: 11px; }
 }
 
-@media (max-width: 480px) {
-  .btn--lg { height: 44px; padding: 0 24px; font-size: 15px; }
-  .pricing-card__amount { font-size: 38px; }
-  .pricing-card__name { font-size: 18px; }
-  .features-grid { grid-template-columns: 1fr; gap: 10px; }
+@media (max-width: 420px) {
+  h1 { font-size: 24px; line-height: 1.25; }
+  h2 { font-size: 18px; }
+
+  .btn--lg { height: 40px; padding: 0 18px; font-size: 13px; }
+  .btn { height: 36px; font-size: 13px; padding: 0 16px; }
+
+  .hero { padding: 28px 12px 20px; }
+  .hero__eyebrow { font-size: 10px; }
+  .hero__subtitle { font-size: 12px; line-height: 1.5; margin-bottom: 16px; }
+
+  .pricing-card__amount { font-size: 32px; }
+  .pricing-card__header { padding: 20px 14px 14px; }
+  .pricing-card__body { padding: 14px; }
+
+  .features-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .feature-card { padding: 10px; }
+
+  .stats-bar { padding: 16px 12px; }
+  .stat-item { padding: 0 10px; }
+  .stat-item__num { font-size: 18px; }
+
+  .trust-bar { flex-direction: column; gap: 8px; align-items: flex-start; padding: 14px 12px; }
+
+  .steps-grid { grid-template-columns: 1fr; gap: 16px; }
+  .step-circle { width: 36px; height: 36px; font-size: 14px; box-shadow: none; }
+
+  .testi-card { padding: 14px; }
+  .rating-summary { padding: 10px 12px; }
+  .rating-summary__num { font-size: 28px; }
+
   .method-cards { grid-template-columns: 1fr; }
-  .hero__subtitle { font-size: 15px; }
-  .trust-bar { flex-direction: column; gap: 10px; align-items: flex-start; padding: 16px; }
+
+  #toast-container { font-size: 12px; padding: 10px 16px; }
 }
 
 /* --- Announcement Bar --- */
@@ -619,19 +702,9 @@ p  { margin-bottom: 8px; }
 .step-item__title { font-weight: 600; font-size: 14px; margin-bottom: 6px; }
 .step-item__desc  { font-size: 12px; color: var(--c-text-sec); line-height: 1.55; }
 
-/* --- Responsive additions --- */
-@media (max-width: 768px) {
-  .stat-item { padding: 0 20px; }
-  .stat-item__num { font-size: 24px; }
-  .testi-grid { grid-template-columns: 1fr; }
-  .steps-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
-  .steps-grid::before { display: none; }
-  .security-section__inner { gap: 20px; }
-}
-@media (max-width: 480px) {
-  .stat-item { padding: 0 12px; }
-  .steps-grid { grid-template-columns: 1fr; }
-}
+/* Pricing card overrides */
+.pricing-card__period { opacity: .75; font-size: 14px; }
+.pricing-card__amount { font-size: 42px; font-weight: 800; letter-spacing: -.03em; }
 
 /* --- Toast Notification --- */
 #toast-container {
