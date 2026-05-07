@@ -51,6 +51,7 @@ body {
   color: var(--c-text-primary);
   background: #0f172a;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 img { max-width: 100%; display: block; }
 a { color: var(--c-amber); text-decoration: none; }
@@ -140,7 +141,7 @@ p  { margin-bottom: 8px; }
   content: '';
   position: absolute;
   top: 0; left: 50%; transform: translateX(-50%);
-  width: 800px; height: 500px;
+  width: 100vw; max-width: 800px; height: 500px;
   background: radial-gradient(ellipse at center, rgba(217,119,6,.18) 0%, transparent 70%);
   pointer-events: none;
   z-index: 0;
